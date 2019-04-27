@@ -28,6 +28,7 @@ namespace NFAtoDFA
             // Refresh Letters' fields
             lbl_SetOfLetters.Text = string.Empty;
             cbo_Letter.Items.Clear();
+            SetOfLetters.Clear();
 
             string[] arrSetOfLetters = txt_Letters.Text.Split(' ').Distinct().ToArray();
             foreach (var letter in arrSetOfLetters)
