@@ -46,6 +46,7 @@ namespace NFAtoDFA
                 lbl_Letter.Width = 80;
                 lbl_Letter.Location = new Point(10, 10);
                 lbl_Letter.Text = SetOfLetters[i].ToString();
+                lbl_Letter.Font = new Font(lbl_Letter.Font, FontStyle.Bold);
                 grp_Letter.Controls.Add(lbl_Letter);
             }
 
@@ -64,6 +65,7 @@ namespace NFAtoDFA
                 lbl_FirstState.Width = 80;
                 lbl_FirstState.Location = new Point(10, 10);
                 lbl_FirstState.Text = SetOfDFAStates[j].ToString();
+                lbl_FirstState.Font = new Font(lbl_FirstState.Font, FontStyle.Bold);
                 grp_FirstState.Controls.Add(lbl_FirstState);
 
                 for (int k = 0; k < SetOfLetters.Count; k++)
@@ -96,6 +98,7 @@ namespace NFAtoDFA
                     lbl_SecondState.Width = 80;
                     lbl_SecondState.Location = new Point(10, 10);
                     lbl_SecondState.Text = tempState;
+                    lbl_SecondState.Font = new Font(lbl_SecondState.Font, FontStyle.Bold);
                     grp_SecondState.Controls.Add(lbl_SecondState);
 
                     bool needAdd = true;

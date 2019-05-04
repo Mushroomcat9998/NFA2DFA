@@ -29,6 +29,7 @@ namespace NFAtoDFA
             lbl_SetOfLetters.Text = string.Empty;
             cbo_Letter.Items.Clear();
             SetOfLetters.Clear();
+            lst_TF.Items.Clear();
 
             string[] arrSetOfLetters = txt_Letters.Text.Split(' ').Distinct().ToArray();
             foreach (var letter in arrSetOfLetters)
@@ -49,6 +50,7 @@ namespace NFAtoDFA
             cbo_SecondState.Items.Clear();
             cbo_InitialState.Items.Clear();
             SetOfNFAStates.Clear();
+            lst_TF.Items.Clear();
 
             string[] arrSetOfNFAStates = txt_NFAStates.Text.Split(' ').Distinct().ToArray();
             foreach (var state in arrSetOfNFAStates)
